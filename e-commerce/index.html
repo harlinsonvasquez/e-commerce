@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,12 +16,11 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6">
-                <select class="form-select" aria-label="Default select example">
+                <select class="form-select" aria-label="Default select example" onchange="cambiarIdioma()">
                     <option selected>Seleccione el idioma</option>
-                    <option value="1">Ingles</option>
-                    <option value="2">Español</option>
-                    
-                  </select>
+                    <option value="en">Inglés</option>
+                    <option value="es">Español</option>
+                </select>
 
             </div>
             <div class="col-md-6">
@@ -48,13 +47,13 @@
                 <div class="card">
                     <img src="./images/hamburguesa-1.webp" alt="">
                     <div class="card-body">
-                        <h2>Hamburguesa Clásica con Queso Cheddar </h2>
+                        <h2 id="hamburguesa1">Hamburguesa Clásica con Queso Cheddar </h2>
                         <h3>$21.500</h3>
-                        <p>Una deliciosa hamburguesa clásica con jugosa carne a la parrilla, lechuga fresca, tomate maduro, cebolla crujiente y un toque especial de mayonesa, todo entre pan suave y queso cheddar derretido.</p>
+                        <p id="descrip1">Una deliciosa hamburguesa clásica con jugosa carne a la parrilla, lechuga fresca, tomate maduro, cebolla crujiente y un toque especial de mayonesa, todo entre pan suave y queso cheddar derretido.</p>
                            
 
                     </div>
-                    <button type="button" class="btn btn-danger">Comprar</button>
+                    <button type="button" class="btn btn-danger" id="comprar1">Comprar</button>
                 </div>
             </div>
     
@@ -63,90 +62,90 @@
                 <div class="card">
                     <img src="./images/hamburguesa-2.webp" alt="">
                     <div class="card-body">
-                        <h2>Hamburguesa Vegetariana con Champiñones </h2>
+                        <h2 id="hamburguesa2">Hamburguesa Vegetariana con Champiñones </h2>
                         <h3>$21.500</h3>
-                        <p>Una opción vegetariana exquisita, con una jugosa hamburguesa de portobello a la parrilla, queso fundido, champiñones frescos salteados y una mezcla de vegetales frescos en un pan artesanal.</p>
+                        <p id="descrip2">Una opción vegetariana exquisita, con una jugosa hamburguesa de portobello a la parrilla, queso fundido, champiñones frescos salteados y una mezcla de vegetales frescos en un pan artesanal.</p>
                             
 
                     </div>
-                    <button type="button" class="btn btn-danger">Comprar</button>
+                    <button type="button" class="btn btn-danger" id="comprar2">Comprar</button>
                 </div>
             </div>
             <div class="col-md-3">
                 <div class="card">
                     <img src="./images/hamburguesa-3.webp" alt="">
                     <div class="card-body">
-                        <h2>Hamburguesa Picante de Pollo con Guacamole </h2>
+                        <h2 id="hamburguesa3">Hamburguesa Picante de Pollo con Guacamole </h2>
                         <h3>$21.500</h3>
-                        <p>Sabor picante con pechuga de pollo sazonada, guacamole casero, queso pepper jack, cebolla morada, jalapeños y una explosión de sabores en cada bocado.</p>
+                        <p id="descrip3">Sabor picante con pechuga de pollo sazonada, guacamole casero, queso pepper jack, cebolla morada, jalapeños y una explosión de sabores en cada bocado.</p>
                           
 
                     </div>
-                    <button type="button" class="btn btn-danger">Comprar</button>
+                    <button type="button" class="btn btn-danger" id="comprar3">Comprar</button>
                 </div>
             </div>
             <div class="col-md-3">
                 <div class="card">
                     <img src="./images/hamburguesa-4.webp" alt="">
                     <div class="card-body">
-                        <h2>Hamburguesa BBQ con Tocino y Salsa Casera</h2>
+                        <h2 id="hamburguesa4">Hamburguesa BBQ con Tocino y Salsa Casera</h2>
                         <h3>$21.500</h3>
-                        <p>Una combinación tentadora con tocino crujiente, carne de res a la parrilla, cebolla caramelizada, queso cheddar derretido y una salsa BBQ casera que realza su sabor.</p>
+                        <p id="descrip4">Una combinación tentadora con tocino crujiente, carne de res a la parrilla, cebolla caramelizada, queso cheddar derretido y una salsa BBQ casera que realza su sabor.</p>
                             
 
                     </div>
-                    <button type="button" class="btn btn-danger">Comprar</button>
+                    <button type="button" class="btn btn-danger" id="comprar4">Comprar</button>
                 </div>
             </div>
             <div class="col-md-3">
                 <div class="card">
                     <img src="./images/hamburguesa-5.webp" alt="">
                     <div class="card-body">
-                        <h2>LHamburguesa Hawaiana con Piña y Salsa Teriyaki</h2>
+                        <h2 id="hamburguesa5">LHamburguesa Hawaiana con Piña y Salsa Teriyaki</h2>
                         <h3>$21.500</h3>
-                        <p>El toque tropical perfecto con una jugosa hamburguesa de carne de res, piña a la parrilla, queso suave, lechuga fresca y salsa teriyaki que te transportará a Hawai.</p>
+                        <p id="descrip5">El toque tropical perfecto con una jugosa hamburguesa de carne de res, piña a la parrilla, queso suave, lechuga fresca y salsa teriyaki que te transportará a Hawai.</p>
                             
 
                     </div>
-                    <button type="button" class="btn btn-danger">Comprar</button>
+                    <button type="button" class="btn btn-danger" id="comprar5">Comprar</button>
                 </div>
             </div>
             <div class="col-md-3">
                 <div class="card">
                     <img src="./images/hamburguesa-6.webp" alt="">
                     <div class="card-body">
-                        <h2>Hamburguesa Mediterránea con Aceitunas y Queso Feta</h2>
+                        <h2 id="hamburguesa6">Hamburguesa Mediterránea con Aceitunas y Queso Feta</h2>
                         <h3>$21.500</h3>
-                        <p>Un viaje culinario con carne de cordero sazonada, aceitunas kalamata, tomate fresco, pepino, lechuga crujiente y el distintivo sabor del queso feta.</p>
+                        <p id="descrip6">Un viaje culinario con carne de cordero sazonada, aceitunas kalamata, tomate fresco, pepino, lechuga crujiente y el distintivo sabor del queso feta.</p>
                             
 
                     </div>
-                    <button type="button" class="btn btn-danger">Comprar</button>
+                    <button type="button" class="btn btn-danger" id="comprar6">Comprar</button>
                 </div>
             </div>
             <div class="col-md-3">
                 <div class="card">
                     <img src="./images/hamburguesa-7.webp" alt="">
                     <div class="card-body">
-                        <h2>Hamburguesa Mexicana con Jalapeños super picantes </h2>
+                        <h2 id="hamburguesa7">Hamburguesa Mexicana con Jalapeños super picantes </h2>
                         <h3>$21.500</h3>
-                        <p>Sabores auténticos mexicanos con carne sazonada, queso monterrey jack derretido, jalapeños picantes, cebolla morada y una salsa de chipotle que te despierta los sentidos..</p>
+                        <p id="descrip7">Sabores auténticos mexicanos con carne sazonada, queso monterrey jack derretido, jalapeños picantes, cebolla morada y una salsa de chipotle que te despierta los sentidos..</p>
                             
 
                     </div>
-                    <button type="button" class="btn btn-danger">Comprar</button>
+                    <button type="button" class="btn btn-danger" id="comprar7">Comprar</button>
                 </div>
             </div>
             <div class="col-md-3">
                 <div class="card">
                     <img src="./images/hamburguesa-8.webp" alt="">
                     <div class="card-body">
-                        <h2>Hamburguesa de Pavo con Aguacate Fresco y lechuga </h2>
+                        <h2 id="hamburguesa8">Hamburguesa de Pavo con Aguacate Fresco y lechuga </h2>
                         <h3>$21.500</h3>
-                        <p>Una opción más ligera con una jugosa hamburguesa de pavo, aguacate fresco, queso suave, tomate, lechuga y una combinación perfecta de sabores y frescura.</p>
+                        <p id="descrip8">Una opción más ligera con una jugosa hamburguesa de pavo, aguacate fresco, queso suave, tomate, lechuga y una combinación perfecta de sabores y frescura.</p>
 
                     </div>
-                    <button type="button" class="btn btn-danger">Comprar</button>
+                    <button type="button" class="btn btn-danger" id="comprar8">Comprar</button>
                 </div>
             </div>
            
