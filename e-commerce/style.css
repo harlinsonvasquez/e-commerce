@@ -110,63 +110,19 @@ color: #EBD136;
 
 /*media query*/
 
-/*@media(min-width:320px) and (max-width:646px){
+@media(min-width:768px){
 
-.row{
-  width: 100%;
-  display: flex;
-  align-content: center;
-}
-
-
-.logo{
-  border: solid black;
-  display: flex;
-  align-content: center;
- 
-  
- 
-}
-.logo img{
-  margin-left: 20px;
-  width: 90%;
-}
-.card img{
-  width: 70%;
-  
-}
 .card{
+border: solid black;
+height: 900px;
+  
+}
+@media(max-width:991px){
 
-display: flex;
- margin-bottom: 30px;
- align-items: center;
-  
-}
-button{
-  width: 100%;
-  
-}
-.card-body h2{
-  font-size: 30px;
-}
-.card-body p{
-  margin-top: 50px;
-  font-size: 21px;
-}
-.card-body h3{
-  margin-top: 20px;
-  font-weight: bold;
-}
-.write button:hover{
-  background-color:#eae20b;
-  color: black;
-}
-.write button{
-  background: #f6a905;
-  border: none;
-}
-.write h3:hover{
-  color: #f7b305;
+  .card{
+  border: solid black;
+  height: 920px;
+    
   }
 
-}*/
+}}
