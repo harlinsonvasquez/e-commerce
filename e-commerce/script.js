@@ -90,36 +90,14 @@ function cambiarIdioma() {
 
     // Cambia el texto según el idioma seleccionado
 
-    document.getElementById('hamburguesa1').innerText = textos[idioma]['hamburguesa1'];
-    document.getElementById('descrip1').innerText = textos[idioma]['descrip1'];
-    document.getElementById('comprar1').innerText = textos[idioma]['comprar1'];
+    for (var i = 1; i <= 8; i++) {
+        var id = 'hamburguesa' + i;
+        document.getElementById(id).innerText = textos[idioma][id];
 
-    document.getElementById('hamburguesa2').innerText = textos[idioma]['hamburguesa2'];
-    document.getElementById('descrip2').innerText = textos[idioma]['descrip2'];
-    document.getElementById('comprar2').innerText = textos[idioma]['comprar2'];
+        id = 'descrip' + i;
+        document.getElementById(id).innerText = textos[idioma][id];
 
-    document.getElementById('hamburguesa3').innerText = textos[idioma]['hamburguesa3'];
-    document.getElementById('descrip3').innerText = textos[idioma]['descrip3'];
-    document.getElementById('comprar3').innerText = textos[idioma]['comprar3'];
-
-    document.getElementById('hamburguesa4').innerText = textos[idioma]['hamburguesa4'];
-    document.getElementById('descrip4').innerText = textos[idioma]['descrip4'];
-    document.getElementById('comprar4').innerText = textos[idioma]['comprar4'];
-
-
-    document.getElementById('hamburguesa5').innerText = textos[idioma]['hamburguesa5'];
-    document.getElementById('descrip5').innerText = textos[idioma]['descrip5'];
-    document.getElementById('comprar5').innerText = textos[idioma]['comprar5'];
-
-    document.getElementById('hamburguesa6').innerText = textos[idioma]['hamburguesa6'];
-    document.getElementById('descrip6').innerText = textos[idioma]['descrip6'];
-    document.getElementById('comprar6').innerText = textos[idioma]['comprar6'];
-
-    document.getElementById('hamburguesa7').innerText = textos[idioma]['hamburguesa7'];
-    document.getElementById('descrip7').innerText = textos[idioma]['descrip7'];
-    document.getElementById('comprar7').innerText = textos[idioma]['comprar7'];
-
-    document.getElementById('hamburguesa8').innerText = textos[idioma]['hamburguesa8'];
-    document.getElementById('descrip8').innerText = textos[idioma]['descrip8'];
-    document.getElementById('comprar8').innerText = textos[idioma]['comprar8'];
+        id = 'comprar' + i;
+        document.getElementById(id).innerText = textos[idioma][id];
+    }
 }
