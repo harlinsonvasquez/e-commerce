@@ -28,6 +28,8 @@ window.onload = function() {
 
 function cambiarIdioma() {
     var idioma = document.querySelector('.form-select').value;//para mirar que idioma selecciono el usuario
+    localStorage.setItem('idiomaSeleccionado', idioma);  // Guardar el idioma en localStorage
+
     var textos = {
         'en': {
             'hamburguesa1': 'Classic Burger with Cheddar Cheese',
@@ -100,4 +102,24 @@ function cambiarIdioma() {
         id = 'comprar' + i;
         document.getElementById(id).innerText = textos[idioma][id];
     }
+
+
 }
+document.addEventListener('DOMContentLoaded', function() {
+    var storedIdioma = localStorage.getItem('idiomaSeleccionado');
+    var selector = document.querySelector('.form-select');
+    
+    if (storedIdioma) {
+        selector.value = storedIdioma;
+        cambiarIdioma();
+    }
+
+    // Agregar un evento de cambio de idioma para actualizar y almacenar automáticamente
+    selector.addEventListener('change', function() {
+        cambiarIdioma();
+    });
+});
+
+
+
+

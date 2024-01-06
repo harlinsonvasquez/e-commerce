@@ -113,14 +113,14 @@ color: #EBD136;
 @media(min-width:768px){
 
 .card{
-border: solid black;
+
 height: 900px;
   
 }
 @media(max-width:991px){
 
   .card{
-  border: solid black;
+  
   height: 920px;
     
   }
